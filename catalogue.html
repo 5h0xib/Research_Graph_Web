@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Research Graph</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/RGlogo.png" alt="Research Graph Logo" height="50" style="max-width: 150px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vision.html">Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mission.html">Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow-1">
+        <div>
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="container">
+                    <h1>Service Catalogue</h1>
+                    <p class="lead" style="color: var(--primary-white);">Download detailed information about our
+                        research services</p>
+                </div>
+            </div>
+
+            <!-- Introduction -->
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-10 text-center">
+                            <p class="lead">
+                                Explore our comprehensive service catalogue to learn more about Research Graph's
+                                capabilities. Download detailed service sheets, case studies, and resource materials
+                                to understand how we can support your research needs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service Sheets Grid -->
+                    <div class="row g-4">
+                        <!-- Item 1 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="text-center mb-3">
+                                        <i class="fas fa-poll fa-4x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title text-center">Survey Programming Services</h4>
+                                    <p class="card-text text-muted flex-grow-1">
+                                        Comprehensive overview of our survey programming capabilities and methodologies
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-secondary">PDF · 2.5 MB</span>
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="handleDownload('Survey Programming Services')">
+                                            <i class="fas fa-download me-2"></i>
+                                            Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="text-center mb-3">
+                                        <i class="fas fa-chart-bar fa-4x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title text-center">Data Processing & Analytics</h4>
+                                    <p class="card-text text-muted flex-grow-1">
+                                        Detailed information about our data analysis and statistical services
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-secondary">PDF · 3.1 MB</span>
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="handleDownload('Data Processing & Analytics')">
+                                            <i class="fas fa-download me-2"></i>
+                                            Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="text-center mb-3">
+                                        <i class="fas fa-users fa-4x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title text-center">Field Management Solutions</h4>
+                                    <p class="card-text text-muted flex-grow-1">
+                                        Complete guide to our fieldwork and quality control processes
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-secondary">PDF · 2.8 MB</span>
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="handleDownload('Field Management Solutions')">
+                                            <i class="fas fa-download me-2"></i>
+                                            Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="text-center mb-3">
+                                        <i class="fas fa-search fa-4x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title text-center">Market Research Support</h4>
+                                    <p class="card-text text-muted flex-grow-1">
+                                        Overview of our market research methodologies and service offerings
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-secondary">PDF · 2.9 MB</span>
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="handleDownload('Market Research Support')">
+                                            <i class="fas fa-download me-2"></i>
+                                            Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="text-center mb-3">
+                                        <i class="fas fa-book fa-4x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title text-center">Industry Case Studies</h4>
+                                    <p class="card-text text-muted flex-grow-1">
+                                        Success stories and case studies from various industries
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-secondary">PDF · 4.2 MB</span>
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="handleDownload('Industry Case Studies')">
+                                            <i class="fas fa-download me-2"></i>
+                                            Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="text-center mb-3">
+                                        <i class="fas fa-laptop-code fa-4x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title text-center">Technology Platforms</h4>
+                                    <p class="card-text text-muted flex-grow-1">
+                                        Information about our research technology stack and tools
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-secondary">PDF · 2.3 MB</span>
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="handleDownload('Technology Platforms')">
+                                            <i class="fas fa-download me-2"></i>
+                                            Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 7 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="text-center mb-3">
+                                        <i class="fas fa-check-double fa-4x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title text-center">Quality Assurance Standards</h4>
+                                    <p class="card-text text-muted flex-grow-1">
+                                        Our quality control processes and certification details
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-secondary">PDF · 1.9 MB</span>
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="handleDownload('Quality Assurance Standards')">
+                                            <i class="fas fa-download me-2"></i>
+                                            Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 8 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="text-center mb-3">
+                                        <i class="fas fa-dollar-sign fa-4x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title text-center">Pricing Guide</h4>
+                                    <p class="card-text text-muted flex-grow-1">
+                                        Transparent pricing information for our research services
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-secondary">PDF · 1.5 MB</span>
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="handleDownload('Pricing Guide')">
+                                            <i class="fas fa-download me-2"></i>
+                                            Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 9 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="text-center mb-3">
+                                        <i class="fas fa-comments fa-4x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title text-center">Client Testimonials</h4>
+                                    <p class="card-text text-muted flex-grow-1">
+                                        Reviews and feedback from our satisfied clients
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-secondary">PDF · 2.1 MB</span>
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="handleDownload('Client Testimonials')">
+                                            <i class="fas fa-download me-2"></i>
+                                            Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional Resources -->
+            <section class="bg-light">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Additional Resources</h2>
+                        <p class="text-muted">More materials to help you understand our services</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card text-center p-4">
+                                <i class="fas fa-file-pdf fa-3x text-danger mb-3"></i>
+                                <h5>Company Brochure</h5>
+                                <p class="small text-muted">
+                                    Complete overview of Research Graph services and capabilities
+                                </p>
+                                <button class="btn btn-outline-primary mt-2"
+                                    onclick="handleDownload('Company Brochure')">
+                                    <i class="fas fa-download me-2"></i>
+                                    Download (5.2 MB)
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card text-center p-4">
+                                <i class="fas fa-file-powerpoint fa-3x text-warning mb-3"></i>
+                                <h5>Capabilities Presentation</h5>
+                                <p class="small text-muted">
+                                    Presentation deck showcasing our research capabilities
+                                </p>
+                                <button class="btn btn-outline-primary mt-2"
+                                    onclick="handleDownload('Capabilities Presentation')">
+                                    <i class="fas fa-download me-2"></i>
+                                    Download (8.7 MB)
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card text-center p-4">
+                                <i class="fas fa-file-alt fa-3x text-info mb-3"></i>
+                                <h5>White Papers</h5>
+                                <p class="small text-muted">
+                                    Industry insights and research methodology white papers
+                                </p>
+                                <button class="btn btn-outline-primary mt-2"
+                                    onclick="handleDownload('White Papers Collection')">
+                                    <i class="fas fa-download me-2"></i>
+                                    Download (12.3 MB)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h3>Need More Information?</h3>
+                            <p class="lead text-muted mb-4">
+                                Can't find what you're looking for? Our team is happy to provide custom materials
+                                or answer any questions you may have.
+                            </p>
+                            <a href="contact.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-envelope me-2"></i>
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Research Graph</h5>
+                    <p class="text-light">
+                        Leading provider of market research, data analytics, and consumer insights solutions.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="https://facebook.com" class="text-white me-3" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://twitter.com" class="text-white me-3" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="text-white me-3" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://instagram.com" class="text-white me-3" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>Home
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="about.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>About Us
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="services.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>Our Services
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="careers.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>Careers
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contact.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Contact Information</h5>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            123 Business Avenue, Suite 100
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@researchgraph.com
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-clock me-2"></i>
+                            Mon - Fri: 9:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-light">
+
+            <!-- Copyright and Legal Links -->
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-light">
+                        &copy; 2025 Research Graph. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="privacy.html" class="text-light text-decoration-none me-3">
+                        Privacy Policy
+                    </a>
+                    <a href="terms.html" class="text-light text-decoration-none">
+                        Terms & Conditions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Page Specific Script -->
+    <script>
+        function handleDownload(title) {
+            console.log(`Downloading: ${title}`);
+            alert(`Download initiated for: ${title}\n(This is a demo - no actual PDF file)`);
+        }
+    </script>
+</body>
+
+</html>

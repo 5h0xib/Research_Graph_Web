@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Research Graph</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/RGlogo.png" alt="Research Graph Logo" height="50" style="max-width: 150px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vision.html">Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mission.html">Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow-1">
+        <div>
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <p class="lead" style="color: var(--primary-white);">Get in touch with our team</p>
+                </div>
+            </div>
+
+            <!-- Contact Form and Info -->
+            <section>
+                <div class="container">
+                    <div class="row g-5">
+                        <!-- Contact Form -->
+                        <div class="col-lg-7">
+                            <h2 class="mb-4">Ready to Transform Your Research Strategy? Let’s Talk.</h2>
+                            <p class="text-muted mb-4">
+                                Fill out the form below and we'll get back to you as soon as possible.
+                            </p>
+
+                            <form id="contactForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">
+                                        Full Name <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="John Doe">
+                                    <div class="invalid-feedback" id="nameError"></div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">
+                                        Email Address <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="john.doe@example.com">
+                                    <div class="invalid-feedback" id="emailError"></div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">
+                                        Phone Number <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="tel" class="form-control" id="phone" name="phone"
+                                        placeholder="+1 (555) 123-4567">
+                                    <div class="invalid-feedback" id="phoneError"></div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">
+                                        Message <span class="text-danger">*</span>
+                                    </label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                        placeholder="Tell us about your research needs..."></textarea>
+                                    <div class="invalid-feedback" id="messageError"></div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="col-lg-5">
+                            <h2 class="mb-4">Contact Information</h2>
+
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4">
+                                        <i class="fas fa-building text-primary me-2"></i>
+                                        Main Office
+                                    </h5>
+
+                                    <p class="mb-3">
+                                        <i class="fas fa-globe text-primary me-2"></i>
+                                        <strong>Global Presence:</strong><br>
+                                        United States | United Kingdom | India
+                                    </p>
+
+                                    <p class="mb-3">
+                                        <i class="fas fa-envelope text-primary me-2"></i>
+                                        <strong>Email:</strong><br>
+                                        <a href="mailto:partners@researchgraph.com" class="text-decoration-none">
+                                            partners@researchgraph.com
+                                        </a>
+                                    </p>
+
+                                    <p class="mb-0">
+                                        <i class="fas fa-globe text-primary me-2"></i>
+                                        <strong>Website:</strong><br>
+                                        <a href="https://www.researchgraph.com" class="text-decoration-none">
+                                            www.researchgraph.com
+                                        </a>
+                                    </p>
+
+                                    <p class="mb-0">
+                                        <i class="fas fa-clock text-primary me-2"></i>
+                                        <strong>Office Hours:</strong><br>
+                                        Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                        Saturday - Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">
+                                        <i class="fas fa-share-alt text-primary me-2"></i>
+                                        Follow Us
+                                    </h5>
+                                    <div class="d-flex gap-3">
+                                        <a href="https://facebook.com" class="btn btn-outline-primary" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="fab fa-facebook fa-2x"></i>
+                                        </a>
+                                        <a href="https://twitter.com" class="btn btn-outline-primary" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                        </a>
+                                        <a href="https://linkedin.com" class="btn btn-outline-primary" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="fab fa-linkedin fa-2x"></i>
+                                        </a>
+                                        <a href="https://instagram.com" class="btn btn-outline-primary" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="address.html" class="btn btn-outline-primary w-100">
+                                    <i class="fas fa-map me-2"></i>
+                                    View Detailed Address & Map
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional Contact Options -->
+            <section class="bg-light">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Other Ways to Reach Us</h2>
+                        <p class="text-muted">Choose the contact method that works best for you</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card text-center h-100 p-4">
+                                <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                                <h5>24/7 Support</h5>
+                                <p class="text-muted">
+                                    For urgent matters, call our 24/7 support line
+                                </p>
+                                <p class="fw-bold text-primary">+1 (555) 999-8888</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card text-center h-100 p-4">
+                                <i class="fas fa-comments fa-3x text-primary mb-3"></i>
+                                <h5>Live Chat</h5>
+                                <p class="text-muted">
+                                    Chat with our team during business hours
+                                </p>
+                                <button class="btn btn-primary mt-2">
+                                    Start Chat
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card text-center h-100 p-4">
+                                <i class="fas fa-calendar-alt fa-3x text-primary mb-3"></i>
+                                <h5>Schedule Meeting</h5>
+                                <p class="text-muted">
+                                    Book a consultation with our team
+                                </p>
+                                <button class="btn btn-primary mt-2">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Research Graph</h5>
+                    <p class="text-light">
+                        Leading provider of market research, data analytics, and consumer insights solutions.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="https://facebook.com" class="text-white me-3" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://twitter.com" class="text-white me-3" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="text-white me-3" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://instagram.com" class="text-white me-3" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>Home
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="about.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>About Us
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="services.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>Our Services
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="careers.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>Careers
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contact.html" class="text-light text-decoration-none">
+                                <i class="fas fa-chevron-right me-2"></i>Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Contact Information</h5>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            123 Business Avenue, Suite 100
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@researchgraph.com
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-clock me-2"></i>
+                            Mon - Fri: 9:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-light">
+
+            <!-- Copyright and Legal Links -->
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-light">
+                        &copy; 2025 Research Graph. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="privacy.html" class="text-light text-decoration-none me-3">
+                        Privacy Policy
+                    </a>
+                    <a href="terms.html" class="text-light text-decoration-none">
+                        Terms & Conditions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Page Specific Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactForm = document.getElementById('contactForm');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const phoneInput = document.getElementById('phone');
+            const messageInput = document.getElementById('message');
+
+            const nameError = document.getElementById('nameError');
+            const emailError = document.getElementById('emailError');
+            const phoneError = document.getElementById('phoneError');
+            const messageError = document.getElementById('messageError');
+
+            // Clear errors on input
+            [nameInput, emailInput, phoneInput, messageInput].forEach(input => {
+                input.addEventListener('input', function () {
+                    if (this.classList.contains('is-invalid')) {
+                        this.classList.remove('is-invalid');
+                        const errorDiv = document.getElementById(`${this.id}Error`);
+                        if (errorDiv) errorDiv.textContent = '';
+                    }
+                });
+            });
+
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                let isValid = true;
+
+                // Validate Name
+                if (!nameInput.value.trim()) {
+                    nameInput.classList.add('is-invalid');
+                    nameError.textContent = 'Name is required';
+                    isValid = false;
+                }
+
+                // Validate Email
+                const emailRegex = /\S+@\S+\.\S+/;
+                if (!emailInput.value.trim()) {
+                    emailInput.classList.add('is-invalid');
+                    emailError.textContent = 'Email is required';
+                    isValid = false;
+                } else if (!emailRegex.test(emailInput.value)) {
+                    emailInput.classList.add('is-invalid');
+                    emailError.textContent = 'Email is invalid';
+                    isValid = false;
+                }
+
+                // Validate Phone
+                const phoneRegex = /^\+?[\d\s-()]+$/;
+                if (!phoneInput.value.trim()) {
+                    phoneInput.classList.add('is-invalid');
+                    phoneError.textContent = 'Phone is required';
+                    isValid = false;
+                } else if (!phoneRegex.test(phoneInput.value)) {
+                    phoneInput.classList.add('is-invalid');
+                    phoneError.textContent = 'Phone number is invalid';
+                    isValid = false;
+                }
+
+                // Validate Message
+                if (!messageInput.value.trim()) {
+                    messageInput.classList.add('is-invalid');
+                    messageError.textContent = 'Message is required';
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    // Log to console as simulated
+                    console.log('=== Contact Form Submission ===');
+                    console.log('Name:', nameInput.value);
+                    console.log('Email:', emailInput.value);
+                    console.log('Phone:', phoneInput.value);
+                    console.log('Message:', messageInput.value);
+                    console.log('Submitted at:', new Date().toLocaleString());
+                    console.log('===============================');
+
+                    // Show success message
+                    alert('Thank you for your inquiry! We will get back to you soon.\n\n(Check the browser console to see the logged data)');
+
+                    // Reset form
+                    contactForm.reset();
+                    // Remove any validation classes just in case
+                    [nameInput, emailInput, phoneInput, messageInput].forEach(input => {
+                        input.classList.remove('is-invalid');
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
