@@ -1,11 +1,11 @@
 /* CSS Variables for Color Theme */
 :root {
-    --primary-blue: #0062ca;
+    --primary-blue: #0B2F4A;
     --primary-white: #ffffff;
     --light-gray: #f8f9fa;
     --dark-gray: #646b72;
     --text-dark: #16191b;
-    --hover-blue: #0054b4;
+    --hover-blue: #0a2538;
 }
 
 /* Global Styles */
@@ -73,7 +73,7 @@ a:hover {
     background-color: var(--hover-blue);
     border-color: var(--hover-blue);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+    box-shadow: 0 4px 8px rgba(11, 47, 74, 0.3);
 }
 
 .btn-outline-primary {
@@ -105,26 +105,34 @@ section {
     margin-bottom: 15px;
 }
 
+/* Updated Section Title Separator */
 .section-title::after {
     content: '';
     display: block;
-    width: 80px;
+    width: 60px;
     height: 3px;
     background-color: var(--primary-blue);
-    margin: 20px auto;
+    margin: 15px auto;
+    transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+    width: 100px;
 }
 
 /* Cards */
 .card {
     border: none;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     height: 100%;
+    position: relative;
+    top: 0;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 86, 179, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(11, 47, 74, 0.15);
 }
 
 .card-title {
@@ -135,10 +143,23 @@ section {
 /* Hero Section */
 .hero-section {
     position: relative;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, #003d82 100%);
+    background: linear-gradient(135deg, #0B2F4A 0%, #0a2538 100%);
     color: var(--primary-white);
     padding: 100px 0;
     overflow: hidden;
+}
+
+/* New Hero Style for Updated Pages */
+.hero-updated {
+    color: var(--primary-white) !important;
+}
+
+.hero-updated h1,
+.hero-updated h2,
+.hero-updated h3,
+.hero-updated p,
+.hero-updated .lead {
+    color: var(--primary-white) !important;
 }
 
 .hero-banner-img {
@@ -151,26 +172,65 @@ section {
     left: 0;
 }
 
+.hero-updated .hero-banner-img {
+    height: 100%;
+    opacity: 0.4;
+    z-index: 1;
+}
+
 .hero-content {
     position: relative;
     z-index: 2;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Classic Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.5s cubic-bezier(0.5, 0, 0, 1);
 }
 
-.fade-in-up {
-    animation: fadeInUp 0.8s ease-out;
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal.fade-left {
+    transform: translateX(-50px);
+}
+
+.reveal.fade-right {
+    transform: translateX(50px);
+}
+
+.reveal.active.fade-left,
+.reveal.active.fade-right {
+    transform: translate(0);
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.delay-100 {
+    transition-delay: 0.2s;
+}
+
+.delay-200 {
+    transition-delay: 0.4s;
+}
+
+.delay-300 {
+    transition-delay: 0.6s;
+}
+
+.delay-400 {
+    transition-delay: 0.8s;
 }
 
 /* Service Icons */
@@ -208,7 +268,7 @@ section {
 /* Forms */
 .form-control:focus {
     border-color: var(--primary-blue);
-    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(11, 47, 74, 0.25);
 }
 
 /* Responsive */
@@ -230,27 +290,9 @@ section {
     }
 }
 
-/* Page Content */
-.page-header {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, #003d82 100%);
-    color: var(--primary-white);
-    padding: 60px 0;
-    text-align: center;
-    margin-bottom: 40px;
-}
 
-.page-header h1 {
-    color: var(--primary-white);
-    margin: 0;
-}
+/* ______custom______ */
 
-/* Placeholder Images */
-.placeholder-image {
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-blue);
-    font-size: 1.2rem;
-    font-weight: 600;
+.home-tick {
+    transform: translateY(12px);
 }

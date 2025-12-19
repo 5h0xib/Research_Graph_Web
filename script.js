@@ -29,4 +29,24 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // Classic Scroll Animation Observer
+    const revealElements = document.querySelectorAll('.reveal');
+    
+    if (revealElements.length > 0) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Animate once
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.15, // Trigger when 15% of element is visible
+            rootMargin: "0px"
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    }
 });
