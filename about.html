@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Research Graph</title>
+    <title>About Us - ResearchGraph</title>
     <link rel="icon" type="image/png" href="assets/images/RGlogo.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,11 +16,28 @@
 
 <body class="d-flex flex-column min-vh-100">
 
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container d-flex justify-content-end justify-content-md-between align-items-center">
+            <div class="contact-info">
+                <a href="mailto:contactus@researchgraph.in">
+                    <i class="fas fa-envelope me-2"></i><span
+                        class="d-none d-md-inline">contactus@researchgraph.in</span>
+                </a>
+            </div>
+            <div class="ms-3 ms-md-0">
+                <a href="tel:+919910217363">
+                    <i class="fas fa-phone me-2"></i><span class="d-none d-md-inline me-3">+91 99102 17363</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/RGlogo.png" alt="Research Graph Logo" height="50" style="max-width: 150px;">
+                <img src="assets/images/RGlogo.png" alt="ResearchGraph Logo" height="50" style="max-width: 150px;">
             </a>
 
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
@@ -45,9 +62,6 @@
                         <a class="nav-link" href="services.html">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="catalogue.html">Catalogue</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="careers.html">Careers</a>
                     </li>
                     <li class="nav-item">
@@ -70,9 +84,9 @@
                     <div class="container hero-content">
                         <div class="row">
                             <div class="col-lg-8 mx-auto reveal fade-in-up">
-                                <h1 class="display-3 fw-bold text-white mb-3">About Research Graph</h1>
+                                <h1 class="display-3 fw-bold text-white mb-3">About ResearchGraph</h1>
                                 <p class="lead text-white opacity-75">
-                                    Pioneering market research and data analytics excellence since 2008.
+                                    Turning Data into Decisions: That Drive Growth
                                 </p>
                             </div>
                         </div>
@@ -131,7 +145,7 @@
                         <div class="row justify-content-center mb-5">
                             <div class="col-lg-8 text-center reveal">
                                 <h6 class="text-primary fw-bold text-uppercase">Leadership</h6>
-                                <h2 class="display-5 fw-bold">Founder Profile</h2>
+                                <h2 class="display-5 fw-bold">Founder's Portfolio</h2>
                                 <p class="text-muted">Visionary leadership driving global excellence</p>
                             </div>
                         </div>
@@ -169,13 +183,16 @@
                                                     transparency, and
                                                     long-term client partnership.
                                                 </p>
-                                                <div class="d-flex gap-3">
-                                                    <a href="#" class="btn btn-outline-primary rounded-circle"
-                                                        style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;"><i
-                                                            class="fab fa-linkedin-in"></i></a>
-                                                    <a href="#" class="btn btn-outline-primary rounded-circle"
-                                                        style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;"><i
-                                                            class="fas fa-envelope"></i></a>
+                                                <div class="d-flex flex-column gap-2">
+                                                    <div class="text-muted">
+                                                        <i
+                                                            class="fas fa-envelope me-2"></i>bhavil.dhingra@researchgraph.in
+                                                    </div>
+                                                    <div class="d-flex gap-3 mt-2">
+                                                        <a href="#" class="btn btn-outline-primary rounded-circle"
+                                                            style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;"><i
+                                                                class="fab fa-linkedin-in"></i></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -332,7 +349,7 @@
                 <section class="bg-primary text-white">
                     <div class="container">
                         <div class="row text-center">
-                            <div class="col-md-3 mb-4">
+                            <div class="col-md-3 mb-4" style="display: none;">
                                 <h2 class="display-4 fw-bold text-white">15+</h2>
                                 <p class="lead" style="color: var(--primary-white);">Years of Excellence</p>
                             </div>
@@ -360,7 +377,7 @@
             <div class="row">
                 <!-- Company Info -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="text-white mb-3">Research Graph</h5>
+                    <h5 class="text-white mb-3">ResearchGraph</h5>
                     <p class="text-light">
                         Leading provider of market research, data analytics, and consumer insights solutions.
                     </p>
@@ -376,10 +393,10 @@
                             rel="noopener noreferrer">
                             <i class="fab fa-linkedin fa-2x"></i>
                         </a>
-                        <a href="https://instagram.com" class="text-white me-3" target="_blank"
+                        <!-- <a href="https://instagram.com" class="text-white me-3" target="_blank"
                             rel="noopener noreferrer">
                             <i class="fab fa-instagram fa-2x"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
 
@@ -433,7 +450,7 @@
                         </li>
                         <li class="mb-2">
                             <i class="fas fa-clock me-2"></i>
-                            24/7 - Open Everyday
+                            24/7 Global Support & Holiday Coverage
                         </li>
                     </ul>
                 </div>
@@ -445,7 +462,7 @@
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
                     <p class="mb-0 text-light">
-                        &copy; 2025 Research Graph. All rights reserved.
+                        &copy; 2025 ResearchGraph. All rights reserved.
                     </p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">

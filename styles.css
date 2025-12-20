@@ -296,3 +296,35 @@ section {
 .home-tick {
     transform: translateY(12px);
 }
+
+/* Top Banner */
+.top-banner {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    font-size: 0.9rem;
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1040;
+}
+
+.navbar.sticky-top {
+    top: 40px;
+    /* Adjust based on banner height */
+    z-index: 1030;
+}
+
+.top-banner a {
+    color: var(--primary-white);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.top-banner a:hover {
+    opacity: 0.8;
+    color: var(--primary-white);
+}
+
+
+
+/* Ensure ResearchGraph fits if needed, though mostly text replacement */
