@@ -309,9 +309,10 @@ section {
 }
 
 .navbar.sticky-top {
-    top: 40px;
+    top: 39px;
     /* Adjust based on banner height */
     z-index: 1030;
+    margin: 0;
 }
 
 .top-banner a {
