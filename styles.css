@@ -15,11 +15,18 @@
     box-sizing: border-box;
 }
 
+html {
+    max-width: 100%;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
     background-color: var(--primary-white);
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
 }
 
 /* Typography */
