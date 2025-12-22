@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Classic Scroll Animation Observer
     const revealElements = document.querySelectorAll('.reveal');
-    
+
     if (revealElements.length > 0) {
         const revealObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
@@ -50,3 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach(el => revealObserver.observe(el));
     }
 });
+
+const encodedKey = "NjZiMDU4ZDYtMmEyNy00MWRiLWJkMzMtYzJlMTJhZWU2NGRj";
+document.getElementById("accessKey").value = atob(encodedKey);
+
+// const encodedKey = "MzA0ODQ4MGQtMTYzNy00MDVhLTk1YzAtNGVlMDMzMTFkOTJk";
+// document.getElementById("accessKey").value = atob(encodedKey);
