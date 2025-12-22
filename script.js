@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-const encodedKey = "NjZiMDU4ZDYtMmEyNy00MWRiLWJkMzMtYzJlMTJhZWU2NGRj";
-document.getElementById("accessKey").value = atob(encodedKey);
+//const encodedKey = "NjZiMDU4ZDYtMmEyNy00MWRiLWJkMzMtYzJlMTJhZWU2NGRj";
+//document.getElementById("accessKey").value = atob(encodedKey);
 
-// const encodedKey = "MzA0ODQ4MGQtMTYzNy00MDVhLTk1YzAtNGVlMDMzMTFkOTJk";
-// document.getElementById("accessKey").value = atob(encodedKey);
+const encodedKey = "MzA0ODQ4MGQtMTYzNy00MDVhLTk1YzAtNGVlMDMzMTFkOTJk";
+document.getElementById("accessKey").value = atob(encodedKey);
